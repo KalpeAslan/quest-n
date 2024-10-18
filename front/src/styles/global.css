@@ -1,0 +1,470 @@
+@import url("./wp/build-style/audio/style.css");
+@import url("./wp/build-style/button/style.css");
+@import url("./wp/build-style/buttons/style.css");
+@import url("./wp/build-style/calendar/style.css");
+@import url("./wp/build-style/categories/style.css");
+@import url("./wp/build-style/code/style.css");
+@import url("./wp/build-style/columns/style.css");
+@import url("./wp/build-style/cover/style.css");
+@import url("./wp/build-style/embed/style.css");
+@import url("./wp/build-style/file/style.css");
+@import url("./wp/build-style/gallery/style.css");
+@import url("./wp/build-style/group/style.css");
+@import url("./wp/build-style/heading/style.css");
+@import url("./wp/build-style/image/style.css");
+@import url("./wp/build-style/latest-comments/style.css");
+@import url("./wp/build-style/latest-posts/style.css");
+@import url("./wp/build-style/list/style.css");
+@import url("./wp/build-style/media-text/style.css");
+@import url("./wp/build-style/navigation/style.css");
+@import url("./wp/build-style/navigation-link/style.css");
+@import url("./wp/build-style/home-link/style.css");
+@import url("./wp/build-style/page-list/style.css");
+@import url("./wp/build-style/paragraph/style.css");
+@import url("./wp/build-style/post-author/style.css");
+@import url("./wp/build-style/post-comments/style.css");
+@import url("./wp/build-style/post-comments-form/style.css");
+@import url("./wp/build-style/post-excerpt/style.css");
+@import url("./wp/build-style/post-title/style.css");
+@import url("./wp/build-style/preformatted/style.css");
+@import url("./wp/build-style/pullquote/style.css");
+@import url("./wp/build-style/post-template/style.css");
+@import url("./wp/build-style/query-pagination/style.css");
+@import url("./wp/build-style/quote/style.css");
+@import url("./wp/build-style/rss/style.css");
+@import url("./wp/build-style/search/style.css");
+@import url("./wp/build-style/separator/style.css");
+@import url("./wp/build-style/site-logo/style.css");
+@import url("./wp/build-style/social-links/style.css");
+@import url("./wp/build-style/spacer/style.css");
+@import url("./wp/build-style/tag-cloud/style.css");
+@import url("./wp/build-style/table/style.css");
+@import url("./wp/build-style/text-columns/style.css");
+@import url("./wp/build-style/verse/style.css");
+@import url("./wp/build-style/video/style.css");
+@import url("./wp/build-style/post-featured-image/style.css");
+@import url("./wp/build-style/common.css");
+@import url("./wp/build-style/style.css");
+@import url("./wp/build-style/theme.css");
+@import url("./wp/build-style/reset.css");
+
+@import "./animations.css";
+@import "./variables.css";
+@import "./typography.css";
+@import "./helper.css";
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-1);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.os-host {
+  width: 100%;
+}
+
+.os-theme-dark {
+  --os-handle-bg-active: var(--scrollbar-background-color);
+  --os-handle-bg: var(--scrollbar-background-color);
+}
+
+.os-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.os-theme-dark > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle,
+.os-theme-light > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle,
+.os-theme-dark > .os-scrollbar > .os-scrollbar-track,
+.os-theme-light > .os-scrollbar > .os-scrollbar-track {
+  border-radius: 0;
+}
+
+.os-theme-dark > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle {
+  background-color: var(--scrollbar-background-color);
+}
+
+.os-theme-dark.scroll-table
+  > .os-scrollbar
+  > .os-scrollbar-track
+  > .os-scrollbar-handle {
+  width: 2px;
+  height: 4px;
+  background-color: #7e8080;
+}
+
+.os-theme-dark
+  > .os-scrollbar:hover
+  > .os-scrollbar-track
+  > .os-scrollbar-handle {
+  background-color: var(--scrollbar-background-color);
+  opacity: 0.8;
+}
+
+.os-theme-dark.scroll-table
+  > .os-scrollbar:hover
+  > .os-scrollbar-track
+  > .os-scrollbar-handle {
+  background-color: #7e8080;
+  opacity: 0.8;
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+body #onesignal-slidedown-container.slide-down {
+  height: 0 !important;
+}
+
+body #onesignal-slidedown-container #onesignal-slidedown-dialog {
+  background: var(--header-background-color) !important;
+  box-shadow: 0 2px 6px var(--header-box-shadow-color) !important;
+  font-family: var(--font-family-1);
+}
+
+body
+  #onesignal-slidedown-container
+  #onesignal-slidedown-dialog
+  .slidedown-body-message {
+  color: var(--nav-menu-icon-color) !important;
+}
+
+body
+  #onesignal-slidedown-container
+  #onesignal-slidedown-dialog
+  .slidedown-button.primary {
+  padding: 13px 24px !important;
+  min-width: auto !important;
+  white-space: nowrap !important;
+  color: var(--button-primary-text-color) !important;
+  background: var(--button-primary-background-color) !important;
+  border: 1px solid !important;
+  border-radius: 10px !important;
+  font-family: var(--font-family-1) !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  border-color: transparent !important;
+  outline: none !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s, border 0.3s, color 0.3s !important;
+}
+
+body
+  #onesignal-slidedown-container
+  #onesignal-slidedown-dialog
+  .slidedown-button.primary:hover {
+  background: var(--button-primary-hover-background-color) !important;
+}
+
+body
+  #onesignal-slidedown-container
+  #onesignal-slidedown-dialog
+  .slidedown-button.primary:focus {
+  background: var(--button-primary-focus-background-color) !important;
+  outline: 2px solid var(--button-primary-hover-background-color) !important;
+  outline-offset: 2px !important;
+}
+
+body
+  #onesignal-slidedown-container
+  #onesignal-slidedown-dialog
+  .slidedown-button.primary:focus-visible {
+  outline: 2px solid var(--button-primary-hover-background-color) !important;
+  outline-offset: 2px !important;
+}
+
+body
+  #onesignal-slidedown-container
+  #onesignal-slidedown-dialog
+  .slidedown-button.secondary {
+  padding: 13px 24px !important;
+  min-width: auto !important;
+  white-space: nowrap !important;
+  color: var(--button-secondary-text-color) !important;
+  background: var(--button-secondary-background-color) !important;
+  border: 1px solid !important;
+  font-family: var(--font-family-1) !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  border-radius: 10px !important;
+  border-color: transparent !important;
+  outline: none !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s, border 0.3s, color 0.3s !important;
+}
+
+body
+  #onesignal-slidedown-container
+  #onesignal-slidedown-dialog
+  .slidedown-button.secondary:hover {
+  background: var(--button-secondary-hover-background-color) !important;
+}
+
+body
+  #onesignal-slidedown-container
+  #onesignal-slidedown-dialog
+  .slidedown-button.secondary:focus {
+  background: var(--button-secondary-focus-background-color) !important;
+  outline: 2px solid var(--button-primary-hover-background-color) !important;
+  outline-offset: 2px !important;
+}
+
+body
+  #onesignal-slidedown-container
+  #onesignal-slidedown-dialog
+  .slidedown-button.secondary:focus-visible {
+  outline: 2px solid var(--button-primary-hover-background-color) !important;
+  outline-offset: 2px !important;
+}
+
+body
+  #onesignal-slidedown-container
+  #onesignal-slidedown-dialog
+  .slidedown-body {
+  margin-bottom: 20px !important;
+}
+
+body
+  #onesignal-slidedown-container
+  #onesignal-slidedown-dialog
+  .slidedown-body-icon {
+  width: auto !important;
+  height: auto !important;
+}
+
+body
+  #onesignal-slidedown-container
+  #onesignal-slidedown-dialog
+  .slidedown-body-icon
+  img {
+  position: relative !important;
+  top: initial !important;
+  left: initial !important;
+  width: 35px !important;
+  height: 35px !important;
+  transform: none !important;
+}
+
+button {
+  font-family: var(--font-family-1);
+}
+
+.walletconnect-modal__footer {
+  flex-wrap: wrap;
+}
+
+button[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.display_contents {
+  display: contents;
+}
+
+.display_inline-block {
+  display: inline-block;
+}
+
+.driver-popover.driverjs-theme {
+  border-radius: 16px;
+  border: 0.5px solid var(--color-gr2);
+  background: rgba(38, 40, 40, 0.8);
+  color: white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+#driver-popover-content::before {
+  /*content: "";*/
+  /*background: url("/images/profile/experience/tourArrow.svg");*/
+  /*width: 33.816px;*/
+  /*height: 50.263px;*/
+  /*position: absolute;*/
+  /*left: -50px;*/
+  /*top: -10px;*/
+}
+
+.driver-popover-arrow-side-bottom {
+  background: url("/images/profile/experience/tourArrow.svg");
+  width: 33.816px;
+  height: 50.263px;
+  position: absolute;
+  left: -40px !important;
+  top: -10px;
+  border: none !important;
+}
+
+.driver-popover-arrow-side-top {
+  background: url("/images/profile/experience/tourArrow.svg");
+  width: 33.816px;
+  height: 50.263px;
+  position: absolute;
+  top: 70px !important;
+  border: none !important;
+  transform: scale(-1, 1) rotate(180deg) !important;
+  left: -40px !important;
+}
+
+.driver-popover-arrow-side-right {
+  background: url("/images/profile/experience/tourArrow.svg");
+  width: 33.816px;
+  height: 50.263px;
+  position: absolute;
+  top: 70px !important;
+  border: none !important;
+  transform: scale(-1, 1) rotate(90deg) !important;
+  left: -40px !important;
+}
+
+.d-hidden {
+  display: none !important;
+}
+
+.driver-popover-navigation-btns {
+  justify-content: flex-start !important;
+  gap: 10px;
+}
+
+.driver-popover-navigation-btns button {
+  text-shadow: none !important;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  height: 40px;
+}
+
+.driver-popover-navigation-btns > .driver-popover-prev-btn {
+  min-width: auto !important;
+  white-space: nowrap;
+  font-family: var(--font-family-1);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s, border 0.3s, color 0.3s;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+  color: var(--button-secondary-text-color);
+  background: var(--button-secondary-hover-background-color) !important;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  padding-left: 35px;
+}
+
+.driver-popover-navigation-btns > .driver-popover-prev-btn:hover {
+  background: var(--button-secondary-hover-background-color) !important;
+}
+
+.driver-popover-navigation-btns > .driver-popover-next-btn {
+  padding: 10px;
+  min-width: auto !important;
+  white-space: nowrap;
+  font-family: var(--font-family-1);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s, border 0.3s, color 0.3s;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  color: #87f696;
+  border: none transparent;
+  background: linear-gradient(to right, #547ebe 0%, #51dc5e 100%) left 10px
+      top/calc(100% - 20px) 1px no-repeat,
+    linear-gradient(to right, #547ebe 0%, #51dc5e 100%) left 10px
+      bottom/calc(100% - 20px) 1px no-repeat !important;
+}
+
+.driver-popover-navigation-btns > .driver-popover-next-btn::before {
+  content: "";
+  left: 0;
+  border-radius: 10px 0 0px 10px;
+  border: 1px solid #547ebe;
+  border-right: none;
+  position: absolute;
+  height: 100%;
+  width: 10px;
+  top: 0;
+}
+
+.driver-popover-navigation-btns > .driver-popover-next-btn::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 10px;
+  top: 0;
+  right: 0;
+  border-radius: 0 10px 10px 0;
+  border: 1px solid #51dc5e;
+  border-left: none;
+}
+
+.driver-popover-navigation-btns > .driver-popover-prev-btn::before {
+  content: "";
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  background: url("/images/profile/experience/prevStep.svg");
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  left: 7px;
+}
+
+.fade-out-animation {
+  animation: fadeOut 300ms ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .driver-popover-navigation-btns > .driver-popover-prev-btn {
+    position: relative;
+  }
+  .driver-popover.driverjs-theme {
+    font-size: 12px;
+  }
+}

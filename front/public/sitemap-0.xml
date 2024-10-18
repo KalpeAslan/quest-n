@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://alphaguilty.io</loc><lastmod>2023-03-05T17:45:00.542Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://alphaguilty.io/about-us</loc><lastmod>2023-03-05T17:45:00.542Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://alphaguilty.io/account</loc><lastmod>2023-03-05T17:45:00.542Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://alphaguilty.io/events/online-meetup</loc><lastmod>2023-03-05T17:45:00.542Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://alphaguilty.io/events/twitterspace2</loc><lastmod>2023-03-05T17:45:00.542Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://alphaguilty.io/login</loc><lastmod>2023-03-05T17:45:00.542Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://alphaguilty.io/loyalty</loc><lastmod>2023-03-05T17:45:00.542Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://alphaguilty.io/privacy-policy</loc><lastmod>2023-03-05T17:45:00.542Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://alphaguilty.io/quest</loc><lastmod>2023-03-05T17:45:00.542Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://alphaguilty.io/referral</loc><lastmod>2023-03-05T17:45:00.542Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://alphaguilty.io/referral-invite</loc><lastmod>2023-03-05T17:45:00.542Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://alphaguilty.io/sign-up</loc><lastmod>2023-03-05T17:45:00.542Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://alphaguilty.io/social-auth</loc><lastmod>2023-03-05T17:45:00.542Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://alphaguilty.io/terms-and-condition</loc><lastmod>2023-03-05T17:45:00.542Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+</urlset>

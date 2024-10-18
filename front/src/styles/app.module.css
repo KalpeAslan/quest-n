@@ -1,0 +1,39 @@
+.wrapper {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  overflow: hidden;
+  background-color: var(--app-background-color);
+}
+
+@supports(height: 100svh) and (width: 100svw) {
+  .wrapper {
+    height: 100svh;
+    width: 100svw;
+  }
+}
+
+@supports(height: 100dvh) and (width: 100dvw) {
+  .wrapper {
+    height: 100dvh;
+    width: 100dvw;
+  }
+}
+
+.content-wrapper {
+  position: relative;
+  flex: 1;
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  width: calc(100% - 260px);
+  height: 100%;
+  display: flex;
+  position: relative;
+  contain: content;
+}

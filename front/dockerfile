@@ -1,0 +1,17 @@
+FROM public.ecr.aws/l0w2h7x9/node:16-alpine
+
+# Set the working directory inside the container
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+RUN npm run build
+
+EXPOSE 3000
+
+# Start the application when the container starts
+CMD [ "npm", "run", "start" ]

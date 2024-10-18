@@ -1,0 +1,89 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "number-leading-zero": "always",
+    "max-line-length": null,
+    "no-descending-specificity": null,
+    "font-family-no-missing-generic-family-keyword": null,
+    "number-no-trailing-zeros": null,
+    "value-keyword-case": null,
+    "order/order": [
+      "declarations",
+      {
+        "type": "at-rule",
+        "name": "media"
+      },
+      {
+        "type": "rule",
+        "selector": "^&::(before|after)"
+      },
+      {
+        "type": "rule",
+        "selector": "^&:\\w"
+      },
+      {
+        "type": "rule",
+        "selector": "^&_"
+      },
+      {
+        "type": "rule",
+        "selector": "^."
+      }
+    ],
+    "order/properties-order": [
+      "position",
+      "top",
+      "right",
+      "bottom",
+      "left",
+      "flex",
+      "width",
+      "height",
+      "margin",
+      "margin-top",
+      "margin-right",
+      "margin-bottom",
+      "margin-left",
+      "padding",
+      "padding-top",
+      "padding-right",
+      "padding-bottom",
+      "padding-left",
+      "display",
+      "flex-direction",
+      "justify-content",
+      "align-items",
+      "opacity",
+      "color",
+      "background",
+      "background-color",
+      "box-shadow",
+      "border",
+      "border-top",
+      "border-right",
+      "border-bottom",
+      "border-left",
+      "border-top-right-radius",
+      "border-bottom-right-radius",
+      "border-bottom-left-radius",
+      "border-top-left-radius",
+      "box-shadow",
+      "font",
+      "font-family",
+      "font-weight",
+      "font-size",
+      "text-align",
+      "text-decoration",
+      "text-transform",
+      "cursor",
+      "overflow",
+      "order",
+      "z-index",
+      "opacity",
+      "transition",
+      "transform",
+      "filter"
+    ]
+  }
+}

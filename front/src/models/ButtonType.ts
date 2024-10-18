@@ -1,0 +1,16 @@
+export type IButtonType =
+  | "primary"
+  | "colorfull"
+  | "colorfull-error"
+  | "secondary"
+  | "outlined"
+  | "ghost"
+  | "link"
+  | "w-primary"
+  | "checked"
+  | "checked-disabled"
+  | "error"
+  | "task"
+  | "store"
+  | "icon"
+  | "roundedColorfull";

@@ -1,0 +1,29 @@
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(1000px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in-bottom {
+  animation: slide-in-bottom .5s cubic-bezier(.250, .460, .450, .940) both;
+}
+
+.rotating {
+  animation: rotating .7s linear infinite;
+}

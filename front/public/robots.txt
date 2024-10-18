@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://alphaguilty.io/
+
+# Sitemaps
+Sitemap: https://alphaguilty.io/sitemap.xml
+Sitemap: https://alphaguilty.io//server-sitemap-index.xml

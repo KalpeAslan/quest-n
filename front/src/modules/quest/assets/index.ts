@@ -1,0 +1,11 @@
+export { default as scoreboardImg } from "./scoreboard.png";
+export { default as luckyDrawImg } from "./luckyDraw.png";
+export { default as guaranteedImg } from "./guaranteed.png";
+export { default as participantsImg } from "./participants.png";
+export { default as rewardsImg } from "./rewards.png";
+export { default as profileImg } from "./profile.png";
+export { default as howItWorksBg } from "./howItWorksBg.png";
+export { default as createQuestBg } from "./createQuestBg.png";
+export { default as createQuestBgDesktop } from "./createQuestBgDesktop.png";
+export { default as homeBgMobile } from "./homeBgMobile.png";
+export { default as createQuestBgTablet } from "./createQuestBgTablet.png";

@@ -1,0 +1,20 @@
+export const adminConstants = {
+  paths: [
+    "/admin",
+    "/admin/projects",
+    "/admin/project/create",
+    "/admin/project/[linkTitle]/edit",
+    "/admin/project/[linkTitle]/quest",
+    "/admin/project/[linkTitle]/quest/create",
+    "/admin/project/[linkTitle]/quest/[quest]",
+    "/admin/project/[linkTitle]/quest/[quest]/edit",
+    "/admin/project/[linkTitle]/quest/[quest]/preview",
+    "/admin/project/[linkTitle]/quest/[quest]/create",
+    "/admin/project/[linkTitle]/quest/[quest]/analytics",
+    "/admin/project/[linkTitle]/quests",
+    "/admin/project/[linkTitle]/edit",
+    "/admin/project/[linkTitle]/quest/[quest]/create/[step]",
+    "/admin/project/[linkTitle]/quest/[quest]/edit/[step]",
+    "/admin/project/[linkTitle]/quest/[quest]/preview",
+  ],
+};

@@ -1,0 +1,9 @@
+version: '3'
+services:
+  migrations:
+    container_name: migrations
+    build:
+      context: .
+      dockerfile: ./migrations.dockerfile
+    env_file:
+      - .env

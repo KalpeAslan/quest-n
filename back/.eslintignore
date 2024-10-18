@@ -1,0 +1,5 @@
+data_volumes/
+node_modules/
+src/client/
+package.json
+package-lock.json

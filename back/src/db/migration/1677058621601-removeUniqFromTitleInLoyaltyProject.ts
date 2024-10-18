@@ -1,0 +1,15 @@
+import { MigrationInterface, QueryRunner } from 'typeorm';
+
+export class removeUniqFromTitleInLoyaltyProject1677058621601 implements MigrationInterface {
+  name = 'removeUniqFromTitleInLoyaltyProject1677058621601';
+
+  public async up(queryRunner: QueryRunner): Promise<void> {
+    await queryRunner.query(`ALTER TABLE "loyalty_project" DROP CONSTRAINT "UQ_d72969fb34cb3ee75b26053c3eb"`);
+  }
+
+  public async down(queryRunner: QueryRunner): Promise<void> {
+    await queryRunner.query(
+      `ALTER TABLE "loyalty_project" ADD CONSTRAINT "UQ_d72969fb34cb3ee75b26053c3eb" UNIQUE ("title")`,
+    );
+  }
+}
