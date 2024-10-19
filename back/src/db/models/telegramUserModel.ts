@@ -27,6 +27,18 @@ class TelegramUserModel {
     });
   }
 
+  getByTgId(telegramId: string) {
+    return getRepository(TelegramUser).findOne({
+      where: { telegramId },
+      join: {
+        alias: 'telegramUser',
+        leftJoinAndSelect: {
+          investor: 'telegramUser.investor',
+        },
+      },
+    });
+  }
+
   getByTempCode(tempCode: string) {
     return getRepository(TelegramUser).findOne({
       where: { tempCode },
@@ -48,7 +60,7 @@ class TelegramUserModel {
     return !!record;
   }
 
-  private save(telegramId: string, telegramUsername: string, investorId: number) {
+  public save(telegramId: string, telegramUsername: string, investorId: number) {
     const telegramUser = getRepository(TelegramUser).create({
       investorId,
       telegramId,

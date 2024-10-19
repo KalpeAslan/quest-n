@@ -54,21 +54,10 @@ export const createTokenRewards = async (investorId: number, data: CreateTokenRe
     rewardIds.push(newLoyaltyReward.id);
   }
 
-  const totalAmountWithDecimals = exponentToNumber(totalAmount * 10 ** (contract.decimals || 0));
-
-  const tokenHash = await getErc20Hash(contract.address, contract.chainId, totalAmountWithDecimals);
-
-  const treasuryHash = await getAdditionHash(contract.chainId, data.loyaltyProjectId, tokenHash, rewardIds);
-
-  const signer = web3.eth.accounts.privateKeyToAccount(CONTRACT_PRIVATE_KEY);
-
-  const signature_ = signer.sign(treasuryHash).signature;
-
   return {
     questId_: data.loyaltyProjectId,
     amount_: totalAmount,
     token_: contract.address,
     rewardIds_: rewardIds,
-    signature_,
   };
 };

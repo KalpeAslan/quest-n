@@ -37,6 +37,7 @@ reward.post('/admin/reward/token', authMiddleware, async (req, res, next) => {
 
     res.send(result);
   } catch (error) {
+    console.log('reward: error', error);
     next(error);
   }
 });

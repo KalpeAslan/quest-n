@@ -57,6 +57,7 @@ contract.post(
       const result = await insertTokenContract(req['investorId'], req.body);
       res.send(result);
     } catch (error) {
+      console.log('error', error);
       next(error);
     }
   },

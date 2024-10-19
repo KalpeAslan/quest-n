@@ -157,17 +157,19 @@ class DiscordApiService {
   }
 
   async getServerIdByInviteLink(inviteLink: string) {
-    try {
-      const split = inviteLink.split('/');
-      const invite = split[split.length - 1];
-      const { data } = await axios.get(constants.discord.getApiUrl + `invite/${invite}`);
-      log.info(`guildMeta: ${JSON.stringify(data)}`);
-      return data.guild_id;
-    } catch (error) {
-      log.error(`discordApiService.getServerIdByInviteLink error: ${error}`);
-      throw new NotFoundError(NotFoundErrorKeys.NotFound, 'discordApiService.getServerIdByInviteLink error');
-    }
+    return inviteLink;
   }
+  //   try {
+  //     const split = inviteLink.split('/');
+  //     const invite = split[split.length - 1];
+  //     const { data } = await axios.get(constants.discord.getApiUrl + `invite/${invite}`);
+  //     log.info(`guildMeta: ${JSON.stringify(data)}`);
+  //     return data.guild_id;
+  //   } catch (error) {
+  //     log.error(`discordApiService.getServerIdByInviteLink error: ${error}`);
+  //     throw new NotFoundError(NotFoundErrorKeys.NotFound, 'discordApiService.getServerIdByInviteLink error');
+  //   }
+  // }
 }
 
 export const discordApiService = new DiscordApiService();

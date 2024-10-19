@@ -32,10 +32,21 @@ import { subtractInviteTaskPoints } from '../services/loyalty/task/loyaltyTask';
 import { NotificationsServerService } from '../services/notifications.service';
 import { dtoValidationMiddleware } from '../middlewares/dtoValidating';
 import { ChangePasswordDto } from '../../db/types/interfaces/entry/changePasswordDto';
+import { loginTelegramMiniApp } from '../services/auth/telegramMiniApp';
 
 export const auth = express.Router();
 
 // auth connection flow
+
+auth.post('/auth/enter/tg-mini', async (req, res, next) => {
+  try {
+    const result = await loginTelegramMiniApp(req.body);
+    res.send(result);
+  } catch (error) {
+    next(error);
+  }
+});
+
 auth.get('/auth/:entryType/connect', async (req, res, next) => {
   try {
     const authObject = await сonnectAuth(req.params.entryType as EntryTypesEnum);
@@ -160,6 +171,7 @@ auth.post('/auth/login/:entryType', async (req, res, next) => {
     }
     res.send(result);
   } catch (error) {
+    console.log('error', error);
     next(error);
   }
 });

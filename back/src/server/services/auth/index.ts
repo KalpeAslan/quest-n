@@ -21,6 +21,7 @@ import { phoneChangePasswordService, phoneDisconnectUserService } from './phone'
 import { telegramAccessTokenService, telegramDisconnectUserService, telegramLoginService } from './telegram';
 import { twitterDisconnectUserService, twitterGetAuthTokenAndUserService, twitterGetLoginUrlService } from './twitter';
 import { connectWallet, walletDisconnectUserService } from './wallet';
+import { TelegramMiniDto } from '../../../db/types/interfaces/entry/telegramMiniDto';
 
 /* Social connect flow methods */
 
@@ -139,6 +140,8 @@ export const bodyValidatorAuth = (entryType: EntryTypesEnum, body) => {
       return bodyValidator(TwitterEntryDto, body);
     case EntryTypesEnum.Wallet:
       return bodyValidator(WalletEntryDto, body);
+    case EntryTypesEnum.Telegram:
+      return bodyValidator(TelegramMiniDto, body);
     default:
       throw new NotFoundError(NotFoundErrorKeys.NotFound, `bodyValidatorAuth: ${entryType} is not implemented`);
   }

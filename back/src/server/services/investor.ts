@@ -152,7 +152,6 @@ export const updateInvestor = async (investorId: number, updatedInvestorDto: Upd
 export const createInvestor = async () => {
   const username = await generateUniqueRandomUsername();
   const investor = await investorModel.create({ username });
-  await createReferralProfile(investor.id);
   await tokensStorageModel.create(investor.id);
 
   return investor;

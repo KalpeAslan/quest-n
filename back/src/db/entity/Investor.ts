@@ -30,9 +30,9 @@ export class Investor {
   id!: number;
 
   @Column('varchar', {
-    unique: true,
-    nullable: false,
-    default: () => 'uuid_generate_v4()',
+    unique: false,
+    nullable: true,
+    default: null,
   })
   analytics_id!: string;
 

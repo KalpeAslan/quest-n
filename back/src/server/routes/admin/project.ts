@@ -48,6 +48,8 @@ project.post('/admin/project', authMiddleware, fileUpload('file').single('logo')
     logger.info(req, { response: { partnerProject } });
     res.send({ project: partnerProject });
   } catch (error) {
+    console.log('req', req.body);
+    console.log('error', error);
     next(error);
   }
 });

@@ -11,10 +11,7 @@ twitter.get('/twitter/check-username', async (req, res, next) => {
   try {
     if (!req.query.username) throw new BadRequestError(BadRequestErrorKeys.NotValidDataProvided, 'Invalid username');
 
-    const userId = await twitterApiService.fetchTwitterIdByUsername(
-      req.query.username as string,
-      Number(req['investorId']),
-    );
+    const userId = req.query.username;
 
     if (!userId) throw new BadRequestError(BadRequestErrorKeys.NotValidDataProvided, 'Invalid username');
 

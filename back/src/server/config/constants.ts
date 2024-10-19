@@ -3,8 +3,8 @@ import { Networks } from '../../db/types/interfaces/blockchain.types';
 
 export const constants = {
   jwt: {
-    accessExpiresIn: '1h',
-    refreshExpiresIn: '7d',
+    accessExpiresIn: '60d',
+    refreshExpiresIn: '60d',
     onlyplayExpiresIn: '1d',
   },
   maxImageSize: Math.floor(2 * 1024 * 1024),

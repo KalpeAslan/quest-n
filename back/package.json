@@ -7,6 +7,7 @@
     "build": "tsc",
     "start": "ts-node src/server/index.ts",
     "start:dev": "nodemon --config nodemon.json src/server/index.ts",
+    "bot": "nodemon --config nodemon.json src/tg-bot/index.ts",
     "start:debug": "nodemon --config nodemon.json  --exec \"node --require ts-node/register --inspect=9002  src/server/index.ts\"",
     "typeorm": "DB_HOST_MIGRATION=localhost node --require ts-node/register ./node_modules/typeorm/cli.js --config ./src/db/configCli.ts",
     "dev:typeorm": "ts-node ./node_modules/.bin/typeorm --config ./src/db/configCli.ts",
@@ -112,10 +113,12 @@
     "sharp": "^0.32.1",
     "socket.io": "^4.7.2",
     "swagger-ui-express": "^4.4.0",
+    "telegraf": "^4.16.3",
     "tsoa": "^4.1.0",
     "twilio": "^4.7.2",
     "typeorm": "^0.2.41",
     "unique-names-generator": "^4.7.1",
+    "vconsole": "^3.15.1",
     "web3": "^1.8.0",
     "winston": "^3.9.0"
   }

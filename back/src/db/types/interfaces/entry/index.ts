@@ -5,4 +5,5 @@ export enum EntryTypesEnum {
   Email = 'email',
   Phone = 'phone',
   Wallet = 'wallet',
+  Telegram = 'telegram',
 }
