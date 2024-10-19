@@ -340,15 +340,6 @@ const SetupStep: FC<Props> = ({ setupHookData }) => {
             value={formik.values.projectName}
             onBlur={onBlur}
             onChange={(e: ChangeEvent<HTMLInputElement>) => {
-              if (e.target.value.length > 25) {
-                return formik.setFieldError(
-                  "projectName",
-                  t({
-                    id: "mgXjfBMcD3GFFwys2XbHH7-quest",
-                    message: "Max length is 25 characters",
-                  }),
-                );
-              }
               formik.handleChange(e);
               if (
                 adminStep === EQuestAdminStep.edit ||

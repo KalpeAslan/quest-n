@@ -91,7 +91,7 @@ const ResetStep: FC<Props> = ({
         if (iframeAuthPopup) {
           setResetPassword(false);
         } else {
-          push("/login");
+          // push("/login");
         }
       } catch (error) {
         formikHelpers.setErrors({

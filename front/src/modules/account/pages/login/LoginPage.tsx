@@ -37,7 +37,7 @@ const LoginPage = () => {
         LocalStorageService.getItem("prev_location");
       LocalStorageService.removeItem("prev_location");
       console.log("accountInfo?.connected inner", accountInfo?.connected);
-      push(loginPrevLocation || localStoragePrevLocation || "/");
+      // push(loginPrevLocation || localStoragePrevLocation || "/");
     }
   }, [accountInfo?.connected, loginPrevLocation, push, pathname]);
 

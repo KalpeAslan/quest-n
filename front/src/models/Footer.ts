@@ -4,4 +4,5 @@ export interface IMenuLink {
   title: string;
   disabled: boolean;
   type: "self" | "redirect" | "reopen";
+  icon?: string;
 }

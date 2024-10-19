@@ -341,3 +341,11 @@ export interface IPendingInviteToPartnerProject {
   partnerProjectId: number;
   investorId: number;
 }
+
+export interface ITgMiniAppEnter {
+  id: string;
+  username?: string;
+  first_name?: string;
+  last_name?: string;
+  photo_url?: string;
+}

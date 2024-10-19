@@ -158,15 +158,15 @@ const Icons = () => {
           >
             <path
               d="M9.43359 7H7.43359V9H5.43359V11H7.43359V13H9.43359V11H11.4336V9H9.43359V7Z"
-              fill="black"
+              fill="currentColor"
             />
             <path
               d="M18.4336 11C18.9859 11 19.4336 10.5523 19.4336 10C19.4336 9.44772 18.9859 9 18.4336 9C17.8813 9 17.4336 9.44772 17.4336 10C17.4336 10.5523 17.8813 11 18.4336 11Z"
-              fill="black"
+              fill="currentColor"
             />
             <path
               d="M22.4336 0H0.433594V20H22.4336V14H24.4336V6H22.4336V0ZM20.4336 18H2.43359V2H20.4336V6H14.4336V14H20.4336V18ZM22.4336 12H16.4336V8H22.4336V12Z"
-              fill="black"
+              fill="currentColor"
             />
           </symbol>
           <symbol
@@ -4670,13 +4670,13 @@ const Icons = () => {
           >
             <path
               d="M20.5 22V10H3.5V22H20.5Z"
-              stroke="white"
+              stroke="currentColor"
               strokeWidth="1.5"
             />
-            <path d="M12 22V10" stroke="white" strokeWidth="1.5" />
-            <path d="M20.5 22H3.5" stroke="white" />
-            <path d="M22 6H2V10H22V6Z" stroke="white" strokeWidth="1.5" />
-            <path d="M8 2L12 6L16 2" stroke="white" strokeWidth="1.5" />
+            <path d="M12 22V10" stroke="currentColor" strokeWidth="1.5" />
+            <path d="M20.5 22H3.5" stroke="currentColor" />
+            <path d="M22 6H2V10H22V6Z" stroke="currentColor" strokeWidth="1.5" />
+            <path d="M8 2L12 6L16 2" stroke="currentColor" strokeWidth="1.5" />
           </symbol>
 
           <symbol

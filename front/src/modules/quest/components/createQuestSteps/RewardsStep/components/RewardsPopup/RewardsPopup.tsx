@@ -106,13 +106,12 @@ const RewardsPopup: FC<Props> = ({
           handleClose={() => onClose(onCompleteConfirmation)}
         >
           <Wrapper>
-            <Box className="header c-font-24-24 c-fw-500 c-font-color">
+            <Box onClick={() => onClose(onCompleteConfirmation)} className="header c-font-24-24 c-fw-500 c-font-color">
               Confirm Reward
               <Button
                 className="c-font-color closeBtn"
                 style="icon"
                 type="button"
-                onClick={() => onClose(onCompleteConfirmation)}
               >
                 <Icon name="menu-close" size="24" />
               </Button>

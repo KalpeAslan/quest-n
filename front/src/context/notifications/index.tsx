@@ -1,13 +1,10 @@
 import React, { ReactNode, useEffect } from "react";
-import { appConfig } from "@/app.config";
 import { LocalStorageService } from "@services";
-import { Socket, io } from "socket.io-client";
+import { Socket } from "socket.io-client";
 import {
   INotification,
   setIsAllNotificationsModalOpen,
   setIsNotificationsMuted,
-  setNewNotificationsExist,
-  setShowMobileNotificationToast,
 } from "@store/slices/notifications/notifications.slice";
 import { Box } from "@mui/material";
 import Icon from "@components/UI/icon/Icon";
@@ -45,35 +42,6 @@ export const NotificationsProvider: React.FC<NotificationProviderProps> = ({
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    const IDs = [];
-    if (!socket) {
-      socket = io(appConfig.NEXT_PUBLIC_SOCKET_SERVER, {
-        auth: {
-          token: LocalStorageService.getItem("au-t"),
-        },
-      });
-    }
-
-    socket.on("connect", () => {
-      socket.on("new-notification", event => {
-        if (event) {
-          if (
-            (IDs.includes(event.id) &&
-              !openSnackbars.find(item => item.id === event.id)) ||
-            LocalStorageService.getItem(muteNotificationsKey)
-          )
-            return;
-          IDs.push(event.id);
-          setOpenSnackbars(prevSnackbars => [event, ...prevSnackbars]);
-          dispatch(setNewNotificationsExist(true));
-          if (isMobile) dispatch(setShowMobileNotificationToast(true));
-        }
-      });
-    });
-    return () => {
-      socket.off("connect");
-      socket.off("new-notification");
-    };
   }, []);
 
   const { push } = useRouter();

@@ -307,8 +307,8 @@ msgstr "Max Answer"
 #~ msgid "8XvQyHv4MSvwnwriww6TmQ-tasks"
 #~ msgstr "The project hasn't started yet"
 
-#: src/components/footer/Footer.tsx:40
-#~ msgid "8Y6B8qFG4yg2PKKGSVaHbc-Footer"
+#: src/components/footer/NavFooter.tsx:40
+#~ msgid "8Y6B8qFG4yg2PKKGSVaHbc-NavFooter"
 #~ msgstr "Launcher Dashboard"
 
 #: src/components/tasks/socialTaskMediumVisitLink/SocialTaskMediumVisitLink.tsx:69
@@ -1742,7 +1742,7 @@ msgstr "Max Answer"
 #~ msgid "vBD6ZrrPqexTfbboEQu27B-subscriptionPopup"
 #~ msgstr "Blog news & updates in your inbox."
 
-#: src/modules/project/components/footer/Footer.tsx:52
+#: src/modules/project/components/footer/NavFooter.tsx:52
 #~ msgid "9f8DNsSuH5Zruck9jDwmjh-project"
 #~ msgstr "Придбати зараз"
 
@@ -2356,8 +2356,8 @@ msgstr "Max Answer"
 #~ msgid "kWECoAjx1iaGzNUJCNYvc3-account"
 #~ msgstr "Облікові записи діяльності"
 
-#: src/components/footer/Footer.tsx:61
-#~ msgid "sbhW8YaYa8smpqKLVnvT5t-Footer"
+#: src/components/footer/NavFooter.tsx:61
+#~ msgid "sbhW8YaYa8smpqKLVnvT5t-NavFooter"
 #~ msgstr "AlphaLabs"
 
 #: src/modules/account/components/settings/components/personalInfo/components/accounts/Accounts.tsx:312
@@ -2368,7 +2368,7 @@ msgstr "Max Answer"
 #~ msgid "hNgzqSf8itqAB9risocjKT-account"
 #~ msgstr "Від'єднати"
 
-#: src/components/footer/Footer.tsx:30
+#: src/components/footer/NavFooter.tsx:30
 #~ msgid "ssACo7cvoVRfaH5yBSZh3g-Sidebar"
 #~ msgstr "Екосистема"
 
@@ -3072,7 +3072,7 @@ msgstr "All tasks done"
 msgid "eSjdZ4qqy9aXHUewAsbEsx-events"
 msgstr "All twitter space participants can earn AlphaQuest tokens for social activity. All details in the link below."
 
-#: src/components/footer/Footer.tsx:156
+#: src/components/footer/NavFooter.tsx:156
 msgid "76ufnSVeimvELk8FaxkQ15-footer"
 msgstr "АльфаАкадемія"
 
@@ -3108,7 +3108,7 @@ msgstr "AlphaGuilty twitter space with KOL's"
 msgid "26YwMKQ1hz7M2aXMxqZEcG-BunnerType"
 msgstr "AlphaGuilty twitter space with KOL's about 2023 trends. Friday, January 6th."
 
-#: src/components/footer/Footer.tsx:100
+#: src/components/footer/NavFooter.tsx:100
 msgid "g9S6V4D1RzAmEJCf7NGMnC-footer"
 msgstr "AlphaGuilty."
 
@@ -3116,8 +3116,8 @@ msgstr "AlphaGuilty."
 msgid "ktpeaDSuce5DTTQqonsMQW-ecosystem"
 msgstr "AlphaLabs"
 
-#: src/components/footer/Footer.tsx:34
-msgid "uFShwEzxEeLt6rToMy2KvH-Footer"
+#: src/components/footer/NavFooter.tsx:34
+msgid "uFShwEzxEeLt6rToMy2KvH-NavFooter"
 msgstr "AlphaQuest"
 
 #: src/modules/ecosystem/components/alphaQuestSection/AlphaQuestSection.tsx:55
@@ -3420,8 +3420,8 @@ msgstr "Blockchain transactions"
 msgid "20b8c6aa-e8fb-11ed-a05b-0242ac120003"
 msgstr "Blockchain User Task is not completed"
 
-#: src/components/footer/Footer.tsx:51
-msgid "2qqr2ofPYzaZpxzhrnRHcx-Footer"
+#: src/components/footer/NavFooter.tsx:51
+msgid "2qqr2ofPYzaZpxzhrnRHcx-NavFooter"
 msgstr "Блог"
 
 #: src/components/events/agenda/Agenda.tsx:109
@@ -4151,7 +4151,7 @@ msgstr "Адреса смарт контракту"
 msgid "bfdkbl2-wlnfdbd-sdfsdf-dfgfn3-dfbl-324n"
 msgstr ""
 
-#: src/components/footer/Footer.tsx:142
+#: src/components/footer/NavFooter.tsx:142
 msgid "jeWzMq9hH8wJzhZRRL9jJc-footer"
 msgstr "Політика файлів cookie"
 
@@ -7388,7 +7388,7 @@ msgstr ""
 msgid "vCkZzowR9HW8WtsNDwcSMU-cookiePopup"
 msgstr "політикою конфіденційності"
 
-#: src/components/footer/Footer.tsx:128
+#: src/components/footer/NavFooter.tsx:128
 msgid "r2rRztxfoeDeXVCZCLbLT1-footer"
 msgstr "Політикою конфіденційності"
 
@@ -7400,7 +7400,7 @@ msgstr "Приватна група Discord"
 msgid "48Cb8LTZzshfwhPuMoZjkk-events"
 msgstr "Приватна група Discord"
 
-#: src/components/footer/Footer.tsx:148
+#: src/components/footer/NavFooter.tsx:148
 msgid "rfwMPofLFGTLHdzucZZ7Vp-footer"
 msgstr "Продукт"
 
@@ -8329,7 +8329,7 @@ msgstr "Submit"
 msgid "4vSPkvasGMPbrFWUgjEsdH-account"
 msgstr "Submit"
 
-#: src/components/footer/Footer.tsx:164
+#: src/components/footer/NavFooter.tsx:164
 msgid "4szFQtRUiUCNSj6kgM6fGK-footer"
 msgstr "Підпишіться на нашу розсилку"
 
@@ -8435,7 +8435,7 @@ msgstr "Telos"
 msgid "fHtQAATzT3gxr9xW3mmZf6-OnlineEvent"
 msgstr "Telos Ambassador"
 
-#: src/components/footer/Footer.tsx:113
+#: src/components/footer/NavFooter.tsx:113
 msgid "hGAQT3uud8k8ntfZekKfn8-footer"
 msgstr "Умовами обслуговування"
 
@@ -9201,8 +9201,8 @@ msgstr ""
 msgid "6MJnLNyLFtfF4H2rHJE4xx-telegramPopup"
 msgstr ""
 
-#: src/components/footer/Footer.tsx:65
-msgid "23sbhW8YaYa8smpqKLVnvT5t-Footer"
+#: src/components/footer/NavFooter.tsx:65
+msgid "23sbhW8YaYa8smpqKLVnvT5t-NavFooter"
 msgstr ""
 
 #: src/components/socialsLogin/telegram/components/telegramPopup/TelegramPopup.tsx:148
@@ -9221,8 +9221,8 @@ msgstr "Verify task"
 msgid "bKELB8jy2gDR9Wg6xAYV72-telegramPopup"
 msgstr ""
 
-#: src/components/footer/Footer.tsx:58
-msgid "jtqu8k6wh9zU6NsDKgXgAX-Footer"
+#: src/components/footer/NavFooter.tsx:58
+msgid "jtqu8k6wh9zU6NsDKgXgAX-NavFooter"
 msgstr "Відео"
 
 #: src/components/disclaimerPopup/DisclaimerPopup.tsx:86

@@ -94,15 +94,10 @@ const AccountsAndSecurity: NextPage = () => {
         <Box
           className={classnames("header", "c-font-32-38 c-fw-500 c-font-color")}
           component="h3"
+          textAlign={"center"}
           mb={{ xs: 2, md: 3 }}
         >
-          <Trans id="xaGERQNbnHmCsZnHH2RkZLX-account">
-            Accounts & Security
-          </Trans>
-        </Box>
-
-        <Box className="sticky">
-          <AccountBarLazy />
+          Account
         </Box>
 
         <Box className="blocks">

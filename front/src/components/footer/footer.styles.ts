@@ -5,6 +5,11 @@ const FooterStylesWrapper = styled.div`
   margin-bottom: 1px;
   box-shadow: 0 0 6px var(--header-box-shadow-color);
   z-index: 2;
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  left: 0;
+  background: var(--footer-background-color);
 `;
 
 const FooterStylesFooter = styled.footer`

@@ -16,7 +16,7 @@ import { PartnerProjectAdmin } from "../../models";
 import { getUserPartnerProjectsThunk } from "../../../account/store/account.thunks";
 
 const ProjectsPage = () => {
-  const data = useTypedSelector(getPartnerProjects) as PartnerProjectAdmin[] | null;
+  const data = useTypedSelector(getPartnerProjects) as PartnerProjectAdmin[] | any;
 
   const dispatch = useAppDispatch();
 

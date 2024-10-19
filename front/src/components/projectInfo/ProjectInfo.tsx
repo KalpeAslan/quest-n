@@ -39,7 +39,7 @@ const ProjectInfo: FC<ProjectInfoProps> = ({
   const goToProjectPage = useCallback(
     (e: MouseEvent<HTMLElement>) => {
       e.stopPropagation();
-      push(`/partners/${linkTitle}`);
+      // push(`/partners/${linkTitle}`);
     },
     [linkTitle, push],
   );
@@ -66,7 +66,6 @@ const ProjectInfo: FC<ProjectInfoProps> = ({
           }}
         >
           <Image
-            slider={slider}
             lazyLoading
             src={image ? `${appConfig.NEXT_PUBLIC_S3_BUCKET}/${image}` : ""}
             alt={title}

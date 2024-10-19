@@ -298,51 +298,51 @@ const ExperiencePage: NextPage = () => {
           <AccountBarLazy />
         </Box>
 
-        <Box className="blocks">
-          {isLoading ? (
-            <PageLoader />
-          ) : (
-            <>
-              {data.nextLevel && (
-                <ExperienceProgress
-                  nextLevel={data.nextLevel}
-                  notClaimedNextLevel={data.nextLevel}
-                  totalPoints={data.totalExpPoints}
-                  currentLevel={data.currentLevel}
-                  showTour={computeShowTour("tour__exp-progress")}
-                  disabled={!data.levels[0].isClaimed}
-                  onClaimed={() => refetchExp()}
-                />
-              )}
-              <ExperienceProgressByDate
-                data={data.dailyVisitData}
-                onSubmit={useGetProfileExpQuery1.refetch}
-                isStarterClaimed={isStarterClaimed}
-                showTour={computeShowTour("tour__exp-days")}
-              />
-              <ExperienceLevels
-                currentPoints={data.totalExpPoints}
-                data={data.levels}
-                showTour={computeShowTour("tour__exp-levels")}
-                setLevelsPopupOpen={setLevelsPopupOpen}
-                isStarterClaimed={isStarterClaimed}
-              />
-              <ExperienceTasks
-                showTour={computeShowTour("tour__exp-tasks")}
-                data={data.notCompletedExpTasks}
-              />
-              <ExperienceTourModal
-                handleShowTour={() => {
-                  setShowTourModal(false);
-                  setShowTour(true);
-                }}
-                handleSkip={finishTour}
-                handleClose={() => setShowTourModal(false)}
-                isOpen={showTourModal}
-              />
-            </>
-          )}
-        </Box>
+        {/*<Box className="blocks">*/}
+        {/*  {isLoading ? (*/}
+        {/*    <PageLoader />*/}
+        {/*  ) : (*/}
+        {/*    <>*/}
+        {/*      {data.nextLevel && (*/}
+        {/*        <ExperienceProgress*/}
+        {/*          nextLevel={data.nextLevel}*/}
+        {/*          notClaimedNextLevel={data.nextLevel}*/}
+        {/*          totalPoints={data.totalExpPoints}*/}
+        {/*          currentLevel={data.currentLevel}*/}
+        {/*          showTour={computeShowTour("tour__exp-progress")}*/}
+        {/*          disabled={!data.levels[0].isClaimed}*/}
+        {/*          onClaimed={() => refetchExp()}*/}
+        {/*        />*/}
+        {/*      )}*/}
+        {/*      <ExperienceProgressByDate*/}
+        {/*        data={data.dailyVisitData}*/}
+        {/*        onSubmit={useGetProfileExpQuery1.refetch}*/}
+        {/*        isStarterClaimed={isStarterClaimed}*/}
+        {/*        showTour={computeShowTour("tour__exp-days")}*/}
+        {/*      />*/}
+        {/*      <ExperienceLevels*/}
+        {/*        currentPoints={data.totalExpPoints}*/}
+        {/*        data={data.levels}*/}
+        {/*        showTour={computeShowTour("tour__exp-levels")}*/}
+        {/*        setLevelsPopupOpen={setLevelsPopupOpen}*/}
+        {/*        isStarterClaimed={isStarterClaimed}*/}
+        {/*      />*/}
+        {/*      <ExperienceTasks*/}
+        {/*        showTour={computeShowTour("tour__exp-tasks")}*/}
+        {/*        data={data.notCompletedExpTasks}*/}
+        {/*      />*/}
+        {/*      <ExperienceTourModal*/}
+        {/*        handleShowTour={() => {*/}
+        {/*          setShowTourModal(false);*/}
+        {/*          setShowTour(true);*/}
+        {/*        }}*/}
+        {/*        handleSkip={finishTour}*/}
+        {/*        handleClose={() => setShowTourModal(false)}*/}
+        {/*        isOpen={showTourModal}*/}
+        {/*      />*/}
+        {/*    </>*/}
+        {/*  )}*/}
+        {/*</Box>*/}
       </ExperiencePageStyles>
     </div>
   );

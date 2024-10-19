@@ -73,7 +73,7 @@ const FeaturedItem: FC<Props> = ({ quest, className }) => {
                     sx={{ cursor: "pointer" }}
                     onClick={e => {
                       e.preventDefault();
-                      push(`partners/${quest.partnerProjects[0].linkTitle}`);
+                      push(`quest/${quest.linkTitle}`);
                     }}
                   >
                     <Box className="mainPartnerProjectImageContainer">
@@ -102,7 +102,7 @@ const FeaturedItem: FC<Props> = ({ quest, className }) => {
                       sx={{ cursor: "pointer" }}
                       onClick={e => {
                         e.preventDefault();
-                        push(`partners/${quest.partnerProjects[0].linkTitle}`);
+                        push(`quest/${quest.linkTitle}`);
                       }}
                     >
                       {quest.partnerProjects[0].name}
@@ -128,7 +128,7 @@ const FeaturedItem: FC<Props> = ({ quest, className }) => {
                           sx={{ cursor: "pointer" }}
                           onClick={e => {
                             e.preventDefault();
-                            push(`partners/${partnerProjectItem.linkTitle}`);
+                            push(`quest/${quest.linkTitle}`);
                           }}
                         >
                           <Box className="partnerProjectItemContainer">

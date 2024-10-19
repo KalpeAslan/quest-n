@@ -46,7 +46,7 @@ const InviteToPartnerProjectAuthPage = ({ flow }: IProps) => {
         LocalStorageService.getItem("prev_location");
       LocalStorageService.removeItem("prev_location");
 
-      push(loginPrevLocation || localStoragePrevLocation || "/");
+      // push(loginPrevLocation || localStoragePrevLocation || "/");
     }
   }, [accountInfo?.connected, loginPrevLocation, push]);
 

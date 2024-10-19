@@ -88,7 +88,6 @@ const HeroSection = () => {
                   : "/quest",
               ),
             );
-            push("/login");
             return;
           }
           if (isStarterClaimed) {

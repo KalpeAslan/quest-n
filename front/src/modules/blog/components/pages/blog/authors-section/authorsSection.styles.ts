@@ -28,7 +28,7 @@ const AuthorsStylesItem = styled.li`
   }
 `;
 
-// Authors Styles Footer
+// Authors Styles NavFooter
 const AuthorsStylesFooter = styled(Box)`
   padding-top: 12px;
   border-top: 1px solid #2d3232;

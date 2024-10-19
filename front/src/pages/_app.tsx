@@ -51,6 +51,7 @@ import {
   getDefaultMetaTitle,
 } from "@/utils/getDefaultMetaTags";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
+import {TelegramProvider} from "@context/tg";
 
 const clientSideEmotionCache = createEmotionCache();
 
@@ -221,14 +222,17 @@ const MyApp = props => {
                         }
                       >
                         <AppProvider>
+
                           <NotificationsProvider>
                             <ErrorBoundary>
-                              <Icons />
-                              <MainLayout
-                                Component={Component}
-                                props={{ ...pageProps }}
-                                isLoading={isLoading}
-                              />
+                              <TelegramProvider>
+                                <Icons />
+                                <MainLayout
+                                    Component={Component}
+                                    props={{ ...pageProps }}
+                                    isLoading={isLoading}
+                                />
+                              </TelegramProvider>
                             </ErrorBoundary>
                           </NotificationsProvider>
                         </AppProvider>

@@ -123,13 +123,6 @@ const useSetupStep = ({
   const formSchema = object({
     projectName: string()
       .trim()
-      .max(
-        25,
-        t({
-          id: "mgXjfBMcD3GFFwys2XbHH7-quest",
-          message: "Max length is 25 characters",
-        }),
-      )
       .required(
         t({
           id: "fepBMNhesjMUaPAckxCXKt-quest",

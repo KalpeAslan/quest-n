@@ -14,7 +14,7 @@ const ResetPasswordPage = () => {
 
   useEffect(() => {
     if (accountInfo?.connected && !query.change) {
-      push(loginPrevLocation ? loginPrevLocation : "/");
+      // push(loginPrevLocation ? loginPrevLocation : "/");
     }
   }, [push, accountInfo, query.change]);
 

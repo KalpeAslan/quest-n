@@ -76,7 +76,6 @@ const CreatePartnerProjectPage = ({ isEdit }: IProps) => {
   const formSchema = object({
     name: string()
       .trim()
-      .max(25, "Max length is 25 characters")
       .required("Name is required"),
     description: string(),
     linkTitle: string()

@@ -9,7 +9,7 @@ import {
 } from "@/models";
 import {
   EntryLoginResponse,
-  I2FaData,
+  I2FaData, ITgMiniAppEnter,
   SuccessfulEntryResponse,
   TAuthType,
   TSocialAuthType,
@@ -204,6 +204,14 @@ class EntryService {
 
     return Promise.reject({ message: "Invalid api address" });
   };
+
+
+  entryTgMiniApp(dto: ITgMiniAppEnter) {
+    if (this.apiService) {
+      return this.apiService.post(`auth/enter/tg-mini`, dto);
+    }
+    return Promise.reject({ message: "Invalid api address" });
+  }
 }
 
 export const entryService = new EntryService();

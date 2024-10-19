@@ -1,6 +1,12 @@
 import styled from "@emotion/styled";
 
 export const AccountsWrapper = styled.div`
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
   .button {
     width: 100%;
     max-width: 328px;

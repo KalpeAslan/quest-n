@@ -20,11 +20,7 @@ const LogoLoader: FC<Props> = ({
   return (
     <Wrapper className={className} loaderSize={loaderSize}>
       {!disableLogo && (
-        <Icon
-          name="alphaguilty-task"
-          size={logoSize ? `${logoSize}` : "57"}
-          className="icon"
-        />
+        <img className={'icon'} width={logoSize || 57} height={logoSize || 57} src={'https://optim.tildacdn.pro/tild3535-3538-4238-a132-623935623039/-/resize/120x/-/format/webp/Light_1000x900.png'} />
       )}
       <Image src={loaderImage} alt="loader" className="image" />
     </Wrapper>

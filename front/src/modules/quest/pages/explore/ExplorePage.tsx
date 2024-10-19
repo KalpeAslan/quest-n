@@ -309,7 +309,7 @@ const ExplorePage = () => {
             className="c-font-20-24 c-sm-font-32-38 c-fw-500 c-font-color"
             mb={2}
           >
-            <Trans id="ag3knFGjPz64xUE3yto8Jr-quest">Explore</Trans>
+            Learn & Earn
           </Box>
 
           <Box

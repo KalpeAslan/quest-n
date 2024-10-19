@@ -73,7 +73,7 @@ export const RewardBadge: FC<IProps> = ({
     >
       <>
         {logo ? (
-          <Image
+          <img
             src={`${appConfig.NEXT_PUBLIC_S3_BUCKET}/${logo}`}
             alt={symbol}
             width={15}

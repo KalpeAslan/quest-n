@@ -264,9 +264,7 @@ export const MainLayout: FC<IProps> = ({ Component, props, isLoading }) => {
     const mainContent = (
       <>
         <Component {...props} />
-        {!router.pathname.includes("whitelisting") &&
-          !router.pathname.includes("iframe") &&
-          !router.pathname.includes("wallet-login") && <Footer />}
+        <Footer/>
       </>
     );
 
@@ -318,20 +316,20 @@ export const MainLayout: FC<IProps> = ({ Component, props, isLoading }) => {
         {!isBannerClosed && isShowBunner && <Banner />}
         <RestrictionForCreationPopup />
         <RestrictionForWalletPopup />
-        <InviteReferralsPopup />
+        {/*<InviteReferralsPopup />*/}
         <ReferralPopupResult />
         <WalletsPopup />
-        <OnboardingPopup />
-        <CreateQuestPopup />
+        {/*<OnboardingPopup />*/}
+        {/*<CreateQuestPopup />*/}
         <DisconnectWalletPopup />
-        <IframeAuthPopup />
+        {/*<IframeAuthPopup />*/}
         <PartnerProjectCreationPopup />
-        <DisclaimerPopup />
-        <AllNotificationsPopup />
+        {/*<DisclaimerPopup />*/}
+        {/*<AllNotificationsPopup />*/}
         <ExperienceFinishTourModal />
-        <AcceptPartnerProjectPopup />
-        <AcceptPartnerPAcceptPartnerProjectNotConnectedPopup />
-        <AcceptPartnerPAcceptPartnerProjectConnectedPopup />
+        {/*<AcceptPartnerProjectPopup />*/}
+        {/*<AcceptPartnerPAcceptPartnerProjectNotConnectedPopup />*/}
+        {/*<AcceptPartnerPAcceptPartnerProjectConnectedPopup />*/}
         <Header />
 
         <div className={st["content-wrapper"]}>

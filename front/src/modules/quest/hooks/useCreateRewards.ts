@@ -1140,7 +1140,7 @@ export const useCreateRewards = ({
       return;
     }
 
-    await onSaveAsDraft();
+    // await onSaveAsDraft();
 
     try {
       setLoading(true);
@@ -1148,6 +1148,7 @@ export const useCreateRewards = ({
         {
           eligibleUsersCount: luckyDrawUsersAmount,
           threshold,
+          questStatus: QuestStatus.Active,
         },
         currentQuest.linkTitle,
       );
@@ -1157,7 +1158,7 @@ export const useCreateRewards = ({
     }
 
     setParsed(true);
-    setPopupOpen(true);
+    // setPopupOpen(true);
   }, [
     currentQuest,
     luckyDrawUsersAmount,
